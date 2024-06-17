@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Minha Loja Online</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 1fr 1fr; /* Divide a página em duas colunas */
+        }
+
+        .login-section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .product-list {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .promotion-section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            grid-column: span 2; /* Ocupa duas colunas */
+        }
+
+        .product {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .product img {
+            max-width: 80px;
+            border-radius: 8px;
+            margin-right: 10px;
+        }
+
+        .product-info {
+            flex: 1;
+        }
+
+        .product-name {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .product-price {
+            color: #4CAF50;
+            font-size: 16px;
+        }
+
+        .promo {
+            font-weight: bold;
+            font-size: 20px;
+            color: #FF4500;
+        }
+
+        .login-form {
+            max-width: 300px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .login-form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .login-form input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .login-form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .create-account {
+            margin-top: 10px;
+            font-size: 14px;
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        .create-account:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bem-vindo à Minha Loja Online</h1>
+
+    <div class="container">
+        <!-- Seção de Login -->
+        <div class="login-section">
+            <h2>Login</h2>
+            <form class="login-form" action="processar_login.php" method="post">
+                <label for="username">Usuário:</label>
+                <input type="text" id="username" name="username"><br>
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password"><br>
+                <input type="submit" value="Entrar">
+            </form>
+            <a href="#" class="create-account">Criar Conta</a>
+        </div>
+
+        <!-- Lista de Produtos -->
+        <div class="product-list">
+            <h2>Nossos Produtos</h2>
+            <div class="product">
+                <img src="produto1.jpg" alt="Produto 1">
+                <div class="product-info">
+                    <div class="product-name">Produto 1</div>
+                    <div class="product-price">R$ 50,00</div>
+                </div>
+            </div>
+            <div class="product">
+                <img src="produto2.jpg" alt="Produto 2">
+                <div class="product-info">
+                    <div class="product-name">Produto 2</div>
+                    <div class="product-price">R$ 30,00</div>
+                </div>
+            </div>
+            <!-- Adicionar mais produtos conforme necessário -->
+        </div>
+
+        <!-- Seção de Promoções -->
+        <div class="promotion-section">
+            <h2>Promoções da Semana</h2>
+            <div class="promo">Desconto especial em todos os produtos!</div>
+            <p>Aproveite nossas promoções imperdíveis e garanta seus produtos favoritos com descontos incríveis.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Atualizar Cliente</title>
+</head>
+<body>
+    <form action="update_cliente.php" method="post">
+        ID: <input type="text" name="id"><br>
+        Nome: <input type="text" name="nome"><br>
+        Email: <input type="text" name="email"><br>
+        Endereço: <input type="text" name="endereco"><br>
+        Telefone: <input type="text" name="telefone"><br>
+        <input type="submit" value="Atualizar Cliente">
+    </form>
+</body>
+</html>

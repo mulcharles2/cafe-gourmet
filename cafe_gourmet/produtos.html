@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Produtos à Venda</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center; /* Centraliza todo o conteúdo */
+        }
+
+        .product-list {
+            max-width: 800px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            text-align: left; /* Alinha o texto do produto à esquerda */
+        }
+
+        .product {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+        }
+
+        .product img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .product-name {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .product-price {
+            color: #4CAF50;
+            font-size: 16px;
+        }
+
+        .product-description {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .add-to-cart {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s ease;
+        }
+
+        .add-to-cart:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Produtos à Venda</h1>
+    <div class="product-list">
+        <div class="product">
+            <img src="produto1.jpg" alt="Café Expresso">
+            <div class="product-name">Café Expresso</div>
+            <div class="product-price">R$ 5,00</div>
+            <div class="product-description">Café Expresso de excelentíssimo sabor!</div>
+            <button class="add-to-cart">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product">
+            <img src="produto2.jpg" alt="Café Puro">
+            <div class="product-name">Café Puro</div>
+            <div class="product-price">R$ 3,00</div>
+            <div class="product-description">Tradicional Café Puro de excelentíssimo sabor!</div>
+            <button class="add-to-cart">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product">
+            <img src="produto3.jpg" alt="Cappuccino">
+            <div class="product-name">Cappuccino</div>
+            <div class="product-price">R$ 7,00</div>
+            <div class="product-description">Aquele maravilhoso Cappuccino.</div>
+            <button class="add-to-cart">Adicionar ao Carrinho</button>
+        </div>
+        <!-- Adicione mais produtos conforme necessário -->
+    </div>
+</body>
+</html>
